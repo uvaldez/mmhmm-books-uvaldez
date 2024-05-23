@@ -11,7 +11,7 @@ export default async function BookList() {
         <p className='text-center'>No books found!</p>
       }
       {books.map((book: IBook, i: number) => {
-        return <BookItem key={i} author={book.author} description={book.description.slice(0, 300)} imageUrl={book.imageUrl} title={book.title}/>
+        return <BookItem key={i} book={book}/>
       })}
     </>
   )
