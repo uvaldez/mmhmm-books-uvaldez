@@ -49,4 +49,12 @@ h1 {
     }
     
   }
+
+  .error {
+    color: #E02424
+  }
+
+  .success {
+    color: #02c242
+  } 
 }
