@@ -1,3 +1,4 @@
+import React from 'react';
 type propsType = {
   label: string;
   type?: 'submit' | 'reset' | 'button' | undefined;
