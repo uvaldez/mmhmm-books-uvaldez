@@ -1,12 +1,21 @@
+import React from 'react';
 import Link from "next/link";
+import BookList from '../components/features/bookshelf/BookList';
 
 export default function Home() {
   return (
-    <div className="z-10 w-full max-w-5xl items-center justify-between lg:flex">
-      <h1 className="text-h1 text-5xl font-bold">
-        Bookshelf
-      </h1>
-      <Link href="/add" className="text-white bg-green font-medium rounded-lg text-sm h-11 px-5 py-2.5 me-2 mb-2">Add Book</Link>
-    </div>
+    <>
+      <main className="flex flex-col items-center justify-between p-10">
+      <div className="w-[601px] max-w-full items-center justify-between lg:flex text-center">
+        <h1 className="font-bold mb-5">
+          Bookshelf
+        </h1>
+        <Link href="/add" className="text-white bg-green font-medium rounded-lg text-center text-sm h-11 px-5 py-2.5 me-2 mb-2">Add Book</Link>
+      </div>
+      </main>
+      <div className="flex flex-col items-center justify-between">
+        <BookList/>
+      </div>
+    </>
   );
 }

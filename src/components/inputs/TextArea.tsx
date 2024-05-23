@@ -1,20 +1,17 @@
 import React from 'react';
-
 interface IInputProps {
-  type: string;
-  placeholder?: string;
-  handleOnChange: React.ChangeEventHandler<HTMLInputElement>;
+  handleOnChange: React.ChangeEventHandler<HTMLTextAreaElement>;
   value: string;
 };
 
 export default function FormLabel (props: IInputProps) {
-  const { type, placeholder, handleOnChange, value } = props;
+  const { handleOnChange, value } = props;
   return (
-      <input
+      <textarea
         className="w-full shadow-sm border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5" 
+        name={value}
         id={`inline-${value}`} 
-        type={type} 
-        placeholder={placeholder}
+        rows={4} cols={50}
         onChange={handleOnChange}
         value={value}/>
   );
