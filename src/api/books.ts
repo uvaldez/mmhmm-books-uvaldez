@@ -6,6 +6,9 @@ export const getBooks = async () => {
     next: {
       tags: [BOOKLIST_TAG],
     },
+    headers: {
+      'Authorization': 'uzielvaldez',
+    }
   });
   return response.json();
 }
