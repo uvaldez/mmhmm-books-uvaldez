@@ -34,7 +34,7 @@ export default async function Book({ params }: {
 }
 
 
-export async function getPostData(params: {id: string}) {
+async function getPostData(params: {id: string}) {
   const books = await getBooks();
   const bookData = books.filter((book: IBook) => book.id === params.id)[0];
   return bookData
