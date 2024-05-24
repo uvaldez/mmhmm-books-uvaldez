@@ -28,7 +28,7 @@ export default function BookList({ book }:IBookItemProps) {
           <Delete book={book}/>
         </div>
         <span className='font-medium text-xs mb-3'>{author}</span>
-        <p className='text-xs mb-4'>{getDescription()}</p>
+        <p className='text-xs mb-4 lg:min-w-[440px]'>{getDescription()}</p>
         <Link className='text-white bg-green font-medium rounded-lg text-sm px-5 py-2.5 mb-2' href={`/book/${id}`}>View More</Link>
       </div>
     </section>

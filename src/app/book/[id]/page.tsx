@@ -8,8 +8,13 @@ export default async function Book({ params }: {
 }) {
   const bookData = await getPostData(params)
   if (!bookData) {
-    return <h1>Book not found!</h1>;
-  }
+    return (
+    <div className="max-w-full items-center justify-between text-center mt-10">
+      <h1>Book not found!</h1>
+      <Link href="/" className="text-white bg-green font-medium rounded-lg text-center text-sm h-11 px-5 py-2.5 me-2 mb-2">Go Home</Link>
+    </div>
+  );
+}
 
   return (
     <div className="max-w-full items-center justify-between text-center">
