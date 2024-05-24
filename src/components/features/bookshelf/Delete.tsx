@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from "react";
-import DeleteIcon from "../../icons/Delete";
+import DeleteIcon from "@app/components/icons/Delete";
 import Modal from "@app/components/modals/Confirmation";
 import { IBook } from "@app/services/interfaces/book";
 import { deleteBook } from "@app/api/books";

@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import Link from "next/link";
-import BookList from '../components/features/bookshelf/BookList';
+import BookList from '@app/components/features/bookshelf/BookList';
 import Loading from '@app/components/loading/Loading';
 
 export default function Home() {
