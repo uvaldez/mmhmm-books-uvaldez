@@ -1,5 +1,5 @@
 import React from 'react';
-import AddForm from '../../components/forms/Add';
+import AddForm from '@app/components/forms/Add';
 
 export default function AddBook() {
   return (
