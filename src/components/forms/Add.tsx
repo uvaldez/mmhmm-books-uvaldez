@@ -68,7 +68,7 @@ export default function Add() {
       </h1>
       <Close/>
     </div>
-      <form className="w-[500px] max-w-full bg-gray-200 flex flex-col" onSubmit={handleSubmit}>
+      <form className="w-[500px] max-w-full flex flex-col" onSubmit={handleSubmit}>
       <div className="mb-10">
           <Label value="Title"/>
           <Input type="text" placeholder="Title" value={title} handleOnChange={(e: eventValue) => setTitle(e.target.value)}/>
