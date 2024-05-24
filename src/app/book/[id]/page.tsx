@@ -6,7 +6,7 @@ import Image from "next/image";
 export default async function Book({ params }: {
   params: { id: string },
 }) {
-  const bookData = await getPostData(params)
+  const bookData = await getBookData(params)
   if (!bookData) {
     return (
     <div className="max-w-full items-center justify-between text-center mt-10">
@@ -34,7 +34,7 @@ export default async function Book({ params }: {
 }
 
 
-export async function getPostData(params: {id: string}) {
+async function getBookData(params: {id: string}) {
   const books = await getBooks();
   const bookData = books.filter((book: IBook) => book.id === params.id)[0];
   return bookData
